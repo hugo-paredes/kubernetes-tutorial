@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  api:
+    build: "src/Ordering.API/"
+    container_name: shoppingApi
+    ports:
+      - 8880:80
+    environment:
+      ASPNETCORE_ENVIRONMENT: docker
+    depends_on:
+      - "shoppingDb"
+
+  shoppingDb:
+    image: mongo:4.4.0
+    container_name: shoppingDb
+    restart: always
+    volumes:
+    - ./data:/data/db
+    ports:
+      - 27017:27017
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: "${MONGO_ROOT_USERNAME}"
+    #   MONGO_INITDB_ROOT_PASSWORD: "${MONGO_ROOT_PASSWORD}"

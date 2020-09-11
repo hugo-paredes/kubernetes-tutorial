@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{87A5EB97-7D6A-4B24-9E59-3406CF59BE85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "src\Ordering.API\Ordering.API.csproj", "{BED7F563-E042-4BCB-A06F-94AE7B43125E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F01DCB0A-F580-436B-A8D1-E84970B89900}"
+	ProjectSection(SolutionItems) = preProject
+		src\Ordering.API\.dockerignore = src\Ordering.API\.dockerignore
+		docker-compose.yml = docker-compose.yml
+		src\Ordering.API\Dockerfile = src\Ordering.API\Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Debug|x64.Build.0 = Debug|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Debug|x86.Build.0 = Debug|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Release|x64.ActiveCfg = Release|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Release|x64.Build.0 = Release|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Release|x86.ActiveCfg = Release|Any CPU
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BED7F563-E042-4BCB-A06F-94AE7B43125E} = {87A5EB97-7D6A-4B24-9E59-3406CF59BE85}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AAB7F2C-41A3-42F3-B28C-5CE1F1F9F404}
+	EndGlobalSection
+EndGlobal
