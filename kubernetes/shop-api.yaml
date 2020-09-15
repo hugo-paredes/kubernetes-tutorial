@@ -8,9 +8,9 @@ metadata:
     app: shop-api
 spec:
   ports:
-  - protocol: TCP
-    port: 8088
-    targetPort: 80
+    - protocol: TCP
+      port: 8088
+      targetPort: 80
   selector:
     app: shop-api
   type: LoadBalancer
@@ -35,16 +35,18 @@ spec:
         app: shop-api
     spec:
       containers:
-      - image: "hugoparedes/shopping-mall:2.0.0"
-        imagePullPolicy: Always
-        name: shop-api
-        ports:
-          - containerPort: 80
-            protocol: TCP
-        env:
-          - name: ASPNETCORE_URLS
-            value: http://+:80
-        resources:
-          limits:
-            cpu: "750m"
-            memory: "128Mi"
+        - image: "hugoparedes/shopping-mall"
+          imagePullPolicy: Always
+          name: shop-api
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
+            - name: ASPNETCORE_ENVIRONMENT
+              value: production
+          resources:
+            limits:
+              cpu: "750m"
+              memory: "128Mi"
