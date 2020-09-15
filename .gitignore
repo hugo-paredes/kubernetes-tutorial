@@ -364,7 +364,7 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-data/
+**/data/
 bootstrap_dotnet_webapi.sh
 .env
-
+**/tools/
